@@ -16,6 +16,7 @@ export default function FeedbackForm() {
     return (
       <form
         onSubmit={(e) => {
+          // stop re-render
           e.preventDefault();
           // alert(`Sending: "${message}"`);  // ignore the toast*
 
